@@ -5,8 +5,175 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+  	<header class="main-header">
+  		<nav class="main-navigation">
+  			<!-- <a class="header-logo" href="index.html">
+          		<img src="img/logo.svg" alt="Логотип city of Sedona">
+        	</a> -->
+        	<!-- возможно, лучше сделать логотип частью навигационного меню -->
+	        <ul class="site-navigation">
+	          <li><a href="info.html">информация</a></li>
+	          <li><a href="photo.html">фото и видео</a></li>
+	          <li><div class="header-logo"><img src="http://placehold.it/150x100" alt="Логотип city of Sedona"></div></li>
+	          <li><a href="statemap.html">карта штата</a></li>
+	          <li><a href="catalog.html">гостиницы</a></li>
+	        </ul>
+  		</nav>
+  	</header>
+  	<main>
+	  	<section class="welcome-to-sedona">
+	  		<h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+	  		<p class="main-page-image">
+	      		<img src="http://placehold.it/150x100" alt="Картинка welcome to the gorgeous sedona">
+	    	</p>
+	  	</section>
+  		
+    	<section class="reason-heading">
+	        <h2>Седона - небольшой городок в Аризоне заслуживающий большего!</h2>
+	        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+      	</section>
+  		<section class="reason-1">
+	        <section class="reason-1-text">
+	          <h2>Настоящий городок</h2>
+	          <span>- №1 -</span>
+	          <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+	        </section>
+	        <p class="reason-1-image">
+	          <img src="http://placehold.it/150x100">
+	        </p>
+      	</section>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+      	<section class="services">
+      		<ul class="services-list">
+      			<li>
+      				<section class="services-housing">
+      					<div class="services-housing-logo"><img src="http://placehold.it/150x100" alt="Логотип жилье"></div>
+      					<h3>Жилье</h3>
+          				<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+      				</section>
+      			</li>
+      			<li>
+      				<section class="services-food">
+      					<div class="services-food-logo"><img src="http://placehold.it/150x100" alt="Логотип еда"></div>
+      					<h3>Еда</h3>
+          				<p>Всегда заказывайте фирменный бургегр, вы не разочаруетесь!</p>
+      				</section>
+      			</li>
+      			<li>
+      				<section class="services-souvenirs">
+      					<div class="services-souvenirs-logo"><img src="http://placehold.it/150x100" alt="Логотип сувениры"></div>
+      					<h3>Сувениры</h3>
+          				<p>Не только китайского, но и местного производства!</p>
+      				</section>
+      			</li>
+      		</ul>
+      	</section>
+
+
+      	<section class="reason-2">
+      		<p class="reason-2-image">
+	          <img src="http://placehold.it/150x100">
+	        </p>
+	        <section class="reason-2-text">
+	          <h2>Там есть мост дьявола</h2>
+	          <span>- №2 -</span>
+	          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+	        </section>
+      	</section>
+      	<section>
+      		<ol class="reasons-list">
+	      		<li>
+	      			<section class="reason-text">
+			          <h2>Небольшая площадь</h2>
+			          <span>- №3 -</span>
+			          <p>Все достопримечательностинаходятся очень близко</p>
+		        	</section>
+	      		</li>
+	      		<li>
+	      			<section class="reason-text">
+			          <h2>Красивая дорога</h2>
+			          <span>- №4 -</span>
+			          <p>Ехать в сторону Лас-Вегаса совсем не скучно!</p>
+			        </section>
+	      		</li>
+	      		<li>
+	      			<section class="reason-text">
+			          <h2>Мало туристов</h2>
+			          <span>- №5 -</span>
+			          <p>Большинство едет в Гранд Каньон и толпится там</p>
+			        </section>
+	      		</li>
+      		</ol>
+      	</section>
+
+      	<section class="interested-in">
+      		<b>Заинтересовались?</b>
+        	<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      	</section>
+      	<section class="hotel-search">
+      		<form class="search-form" action="" method="get">
+      		<!-- Форма пока примерная, их еще не проходили. Решил сделать таблицей -->
+	          <legend>Поиск гостиницы в Седоне</legend>
+	          
+	          <table style="border: 1px solid black">
+	          	<tr style="border: 1px solid black">
+		          	<td>
+		          		<label for="day-in">Дата заезда</label>
+		          	</td>
+		          	<td colspan="3">
+		          		<input type="date" class="in-date">
+		          	</td>
+	          	</tr>
+	          	<tr style="border: 1px solid black">
+	          		<td>
+	          			<label for="day-out">Дата выезда</label>
+	          		</td>
+	          		<td colspan="3">
+	          			<input type="date"  class="out-date">
+	          		</td>
+	          	</tr>
+	          	<tr style="border: 1px solid black">
+	          		<td>
+	          			<label for="adult">Взрослые</label>
+	          		</td>
+	          		<td>
+	          			<input type="number" name="adults" id="adult" step="1">
+	          		</td>
+	          		<td>
+	          			<label for="kid">Дети</label>
+	          		</td>
+	          		<td>
+	          			<input type="number" name="kids" id="kid" step="1">
+	          		</td>
+	          	</tr>
+	          </table>
+	          
+	          <button class="btn">Найти</button> 
+	        </form>
+      		
+      	</section>
+      	<section class="map">
+      	<!-- Пока что тоже не знаю как сделать карту, так что временно тут рисунок -->
+      		<img src="http://placehold.it/150x100" alt="Карта месторасположения Седоны">
+      	</section>
+
+      	
+  	</main>
+  	<footer class="main-footer">
+  		<p class="footer-hashtag">#visitsedona</p>
+  		<div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+      </div>
+      <p class="footer-copyright">
+        <b>website by</b> <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+      </p>
+  	</footer>
+
+    
 
   </body>
 </html>

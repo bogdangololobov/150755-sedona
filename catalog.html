@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<header>
+			<nav class="main-navigation">
+	        <ul class="site-navigation">
+	          <li><a href="info.html">информация</a></li>
+	          <li><a href="photo.html">фото и видео</a></li>
+	          <li><div class="header-logo"><a class="main-header-logo" href="index.html"><img src="http://placehold.it/150x100" alt="Логотип city of Sedona"></a></div></li>
+	          <li><a href="statemap.html">карта штата</a></li>
+	          <li class="site-navigation-current"><a href="catalog.html">гостиницы</a></li>
+	        </ul>
+  		</nav>
+		</header>
+		<main>
+			<section class="searching-options">
+				<h1 class="visually-hidden">Параметры поиска</h1>
+				<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+		          <fieldset>
+		            <legend>Инфраструктура:</legend>
+		            	<ul>
+			              <li class="filter-option">
+			              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="waterpool" checked>
+			                Бассейн
+			              </li>
+			              <li class="filter-option">
+			              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking">
+			                Парковка
+			              </li>
+			              <li class="filter-option">
+			              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wifi">
+			                wi-fi
+			              </li>
+			            </ul>
+		          </fieldset>
+		          <fieldset>
+		            <legend>Тип жилья:</legend>
+		            	<ul>
+			              <li class="filter-option">
+			              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" checked>
+			                Гостиница
+			              </li>
+			              <li class="filter-option">
+			              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" checked>
+			                Мотель
+			              </li>
+			              <li class="filter-option">
+			              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" checked>
+			                Аппартаменты
+			              </li>
+			            </ul>
+			      </fieldset>
+			      <fieldset>
+			      	<legend>Стоимость в сутки(р):</legend>
+			      	<!-- Пока не знаю как сделать такую штуку, так что оставлю место пустым -->
+
+			      </fieldset>
+		          <button type="submit" class="filter-button button">Показать</button>
+		        </form>
+			</section>
+
+			<!-- Вот тут не очень знаю что делать и к чему отнести "Найдено:3". По этому сделал пока его просто дивом  -->
+			<div class="number-of-coincidences">
+				<p>Найдено:</p>
+			</div>
+
+			<section class="sort">
+				<p class="sort-text">Сортировка:</p>
+				<ul class="breadcrumbs">
+					<li class="breadcrumbs-current">По цене</li>
+			        <li><a href="#">По типу</a></li>
+			        <li><a href="#">По рейтингу</a></li>
+			    </ul>
+			</section>
+
+			<section class="catalog">
+		        <h2 class="visually-hidden">Результаты поиска</h2>
+		        <ul class="results-list">
+          			<li class="results-item">
+            			<h3>
+            				<a href="#">Amara resort&spa</a>
+            				<span class="results-apartment-category">Гостиница</span>
+                			<span class="results-price-category">От 4000 р.</span>
+            			</h3>
+            			<p>
+			              <a href="#">
+			              	<img src="http://placehold.it/150x100" width="220" height="165" alt="Гостиница Amara resort&spa">
+			              </a>
+			              <p class="results-item-info">
+			              	<a class="button" href="#">Подробнее</a>
+			              </p>
+			              <p class="results-item-book">
+			              	<a class="button" href="#">Забронировать</a>
+			              </p>
+			              <span class="rating-text">Рейтинг:</span>
+			             <!-- Вот тут возникли трудности с тем как размечать звёзды и цифры у рейтинга наверное тоже идут из php -->
+			             <img class="rating-logo" src="http://placehold.it/150x100" alt="Звезда рейтинга">
+			            </p>
+          			</li>
+          			<li class="results-item">
+            			<h3>
+            				<a href="#">Desert Quail inn</a>
+            				<span class="results-apartment-category">Мотель</span>
+                			<span class="results-price-category">От 3000 р.</span>
+            			</h3>
+            			<p>
+			              <a href="#">
+			              	<img src="http://placehold.it/150x100" width="220" height="165" alt="Гостиница Amara resort&spa">
+			              </a>
+			              <p class="results-item-info">
+			              	<a class="button" href="#">Подробнее</a>
+			              </p>
+			              <p class="results-item-book">
+			              	<a class="button" href="#">Забронировать</a>
+			              </p>
+			              <span class="rating-text">Рейтинг:</span>
+			             <!-- Вот тут возникли трудности с тем как размечать звёзды и цифры у рейтинга наверное тоже идут из php -->
+			             <img class="rating-logo" src="http://placehold.it/150x100" alt="Звезда рейтинга">
+			            </p>
+          			</li>
+          			<li class="results-item">
+            			<h3>
+            				<a href="#">Villas at Poco Diablo</a>
+            				<span class="results-apartment-category">Аппартаменты</span>
+                			<span class="results-price-category">От 2000 р.</span>
+            			</h3>
+            			<p>
+			              <a href="#">
+			              	<img src="http://placehold.it/150x100" width="220" height="165" alt="Гостиница Amara resort&spa">
+			              </a>
+			              <p class="results-item-info">
+			              	<a class="button" href="#">Подробнее</a>
+			              </p>
+			              <p class="results-item-book">
+			              	<a class="button" href="#">Забронировать</a>
+			              </p>
+			              <span class="rating-text">Рейтинг:</span>
+			             <!-- Вот тут возникли трудности с тем как размечать звёзды и цифры у рейтинга наверное тоже идут из php -->
+			             <img class="rating-logo" src="http://placehold.it/150x100" alt="Звезда рейтинга">
+			            </p>
+          			</li>
+        		</ul>
+		    </section>
+
+		</main>
+		<footer class="main-footer">
+	  		<p class="footer-hashtag">#visitsedona</p>
+	  		<div class="footer-social">
+	        <ul>
+	          <li><a class="social-button" href="#">Вконтакте</a></li>
+	          <li><a class="social-button" href="#">Фейсбук</a></li>
+	          <li><a class="social-button" href="#">Инстаграм</a></li>
+	        </ul>
+	      </div>
+	      <p class="footer-copyright">
+	        <b>website by</b> <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+	      </p>
+	  	</footer>
+	</body>
+</html>
