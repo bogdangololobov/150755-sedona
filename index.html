@@ -2,8 +2,10 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<link href="css/style.css" rel="stylesheet">
 		<title>HTML Academy: Седона</title>
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 		<header class="main-header">
@@ -26,6 +28,10 @@
 				<p class="main-page-image">
 					<img src="img/intro_small.jpg" width="768" height="513" alt="Картинка welcome to the gorgeous sedona" >
 				</p>
+			</section>
+			<section class="features-promo">
+			    <h2>Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
+			    <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
 			</section>
 			<section class="features-list">
 				<section class="feature pictured right">
@@ -74,12 +80,12 @@
 			
 			
 			<section class="interested-in">
-				<b>Заинтересовались?</b>
+				<h3>Заинтересовались?</h3>
 				<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 			</section>
 			<section class="hotel-search">
 				<form class="search-form" action="#" method="get">
-					<p class="search-form-title">Поиск гостиницы в Седоне</p>
+					<a class="search-form-title">Поиск гостиницы в Седоне</a>
 					<div class="form">
 						<label for="day-in">Дата заезда:</label>
 						<input class="date field" type="text" id="day-in" name="in" placeholder="24 апреля 2016" required>
@@ -118,7 +124,7 @@
 					</div>
 					
 					
-					<button class="btn">Найти</button>
+					<button class="btn search-btn">Найти</button>
 				</form>
 				
 			</section>
