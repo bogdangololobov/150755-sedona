@@ -339,9 +339,204 @@ a {
 	background-color: #f2f2f2;
 }
 
-/*Для жирного шрифта (заголовки)
-font-family: pt-sans, sans-serif;
-font-style: normal;
-font-weight: 700;*/
 
 
+
+/*Построение сетки*/
+
+body{
+	width: 768px;
+}
+
+.main-header {
+	/* Временно для сетки */
+  min-height: 70px;
+  /*Потом убрать, для наглядности сетки*/
+  margin-bottom: -35px;
+}
+
+.header-logo img {
+	position: absolute;
+	z-index: 1;
+	left:315px;
+}
+
+.main-navigation {
+ 
+ display: flex;
+ justify-content:space-around;
+}
+
+
+.site-navigation {
+  margin: 0 auto;
+  padding: 0;
+  
+  list-style: none;  
+}
+
+.site-navigation-left {
+	/*display: flex;*/
+	margin-left: 46px;
+	text-align: left;
+	justify-content: flex-start;
+
+}
+
+.site-navigation-right {
+	/*display: flex;*/
+	margin-right: 46px;
+	text-align: right;
+	justify-content: flex-end;
+}
+
+.welcome-to-sedona {
+	margin-bottom:51px;
+	
+}
+
+.features-promo {
+	text-align: center;
+	padding-bottom: 19px;
+	
+}
+
+.features-promo h2 {
+	margin-bottom:28px;
+}
+
+.features-list {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    counter-reset: features;
+    text-align: center;
+}
+
+.feature {
+    flex: 1 1 21.33%;
+    padding: 55px 6% 40px;
+    width: 256px;
+}
+
+.feature.pictured {
+    position: relative;
+    flex-basis: 88.33%;
+    overflow: hidden;
+    color: white;
+    background-color: #669EC0;
+}
+
+.feature.pictured img {
+    position: absolute;
+    top: 50%;
+    width: 66.67%;
+    transform: translateY(-50%);
+    object-fit: cover;
+}
+
+.feature.right {
+    padding-right: 72.67%;
+}
+
+.feature.right img {
+    right: 0;
+}
+
+.feature.left {
+    padding-left: 72.67%;
+}
+
+.feature.left img {
+    left: 0;
+}
+
+.hotel-search {
+	margin:0 auto;
+	text-align: center;
+}
+
+.main-footer {
+	padding: 45px 0;
+}
+
+.main-footer .container {
+	display: flex;
+	text-align: center;
+}
+
+.footer-hashtag,
+.footer-social,
+.footer-copyright {
+	margin: 0;
+	width: 256px;
+}
+
+.footer-social {
+	display: flex;
+}
+
+/*Сетка для каталога*/
+
+.filter {
+	width: 100%;
+	display: flex;
+}
+
+.filter-infrastructure {
+	margin: 0;
+	width: 153px;
+	margin-left: 46px;
+	margin-right: 59px; 
+}
+
+.filter-type {
+	margin: 0;
+	width: 247px;
+}
+
+.filter-prise {
+	margin: 0;
+	width: 221px;
+	margin-right: 44px;
+	justify-content: flex-end;
+}
+
+.search-results {
+	margin-bottom: 28px;
+}
+
+.results-list {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+
+	list-style: none;
+}
+
+.results-item {
+	width: 768px;
+	height: 91px;
+	padding: 31px 46px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.results-picture {
+	margin: 0;
+	width: 136px;
+	margin-right: 13px;
+}
+
+.middle-section {
+	margin: 0;
+	width: 315px;
+}
+
+.rating {
+	margin: 0;
+	width: 111px;
+	margin-left: 57px;
+}
