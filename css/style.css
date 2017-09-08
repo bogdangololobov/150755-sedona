@@ -51,6 +51,7 @@ input[type="radio"].visually-hidden {
     line-height: 26px;
     font-weight: 700;
     background-color: #ffffff;
+    position: relative;
 }
 .header-logo img {
     position: absolute;
@@ -258,7 +259,7 @@ input[type="radio"].visually-hidden {
     align-items: center;
     justify-content: center;
     width: 568px;
-    height: 88px;
+    height: 86px;
     text-align: center;
     font-size: 21px;
     line-height: 26px;
@@ -286,6 +287,12 @@ input[type="radio"].visually-hidden {
     background-color: white;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
     z-index: 1;
+}
+_:-ms-fullscreen, :root .hotel-search {
+	padding: 55px 53px;
+}
+.hotel-search-invisible {
+	display: none;
 }
 .search-form {
     font-weight: bold;
