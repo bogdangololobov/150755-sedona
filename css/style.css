@@ -44,9 +44,9 @@ input[type="radio"].visually-hidden {
     background-color: #ffffff;
 }
 .cover {
-	box-shadow: 0 0 30px 10px #dbdbdb; 
-	width: 1200px;
-	margin: 0 auto;
+    box-shadow: 0 0 30px 10px #dbdbdb; 
+    width: 1200px;
+    margin: 0 auto;
 }
 .main-navigation {
     margin: 0 auto;
