@@ -44,7 +44,8 @@ input[type="radio"].visually-hidden {
     background-color: #ffffff;
 }
 .cover {
-    box-shadow: 0 0 30px 10px #dbdbdb; 
+    -webkit-box-shadow: 0 0 30px 10px #dbdbdb;
+            box-shadow: 0 0 30px 10px #dbdbdb; 
     width: 1200px;
     margin: 0 auto;
 }
@@ -324,7 +325,7 @@ input[type="radio"].visually-hidden {
     top: 86px;
     left: 0;
     margin: 0 auto;
-    padding: 55px;
+    padding: 55px;  
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 568px;
@@ -333,7 +334,7 @@ input[type="radio"].visually-hidden {
     background-color: white;
     -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
             box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-    z-index: 1;
+    z-index: 2;
     -webkit-animation: bounce 0.6s;
             animation: bounce 0.6s;
 }
@@ -578,6 +579,20 @@ _:-ms-fullscreen, :root .hotel-search {
     background-color: #5496bd;
     color: #88b6d1;
 }
+.map {
+    position: relative;
+}
+.pictured-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.iframe-map {
+    position: relative;
+    border:none;
+    z-index: 1;
+}
 .main-footer .container {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -688,7 +703,9 @@ _:-ms-fullscreen, :root .hotel-search {
     fill: #c9c8c8;
 }
 .main-footer-position {
-    margin-top: -123px;
+    position: relative;
+    z-index: 1;
+    margin-top: -120px;
 }
 /*Сетка для каталога*/
 
@@ -765,6 +782,14 @@ a:active.current-page {
 }
 .filter-option input[type="checkbox"]:checked + .checkbox-indicator {
     background-image: url("../img/checkbox-on.svg");
+}
+.filter-option input[type="checkbox"]:focus + .checkbox-indicator {
+    border-color: #663d15;  
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+.checkbox-blocked {
+    fill: #6a6a6a;
 }
 .filter-price {
     margin: 0;
@@ -843,6 +868,10 @@ a:active.current-page {
     height: 4px;
     cursor: pointer;
 }
+.range-toggle svg:hover {
+    width: 22px;
+    height: 25px;
+}
 .range-toggle-min {
     left: 0;
 }
@@ -870,6 +899,11 @@ a:active.current-page {
 .filter-button.button:hover {
     color: #000000;
     background: #ffffff;
+}
+.filter-button.button:focus {
+    border-color: #663d15;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
 }
 .search-results {
     -webkit-box-sizing: border-box;
