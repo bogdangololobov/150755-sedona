@@ -192,7 +192,7 @@ input[type="radio"].visually-hidden {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 21.33%;
             flex: 1 1 21.33%;
-    padding: 45px 50px 40px;
+    padding: 45px 50px 80px;
     width: 400px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -204,7 +204,6 @@ input[type="radio"].visually-hidden {
     overflow: hidden;
     color: white;
     background-color: #669EC0;
-    height: 256px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -215,10 +214,10 @@ input[type="radio"].visually-hidden {
 }
 .pictured img {
     width: 66.67%;
+    height: 256px;
 }
 .feature.with-icon {
     background-color: #ffffff;
-    height: 330px;
     padding-top: 55px;
 }
 .feature.with-icon.apartments {
@@ -266,7 +265,6 @@ input[type="radio"].visually-hidden {
     left: 0;
 }
 .interested-in {
-    height: 291px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -289,7 +287,7 @@ input[type="radio"].visually-hidden {
     margin-bottom: 47px;
 }
 .search-form-title {
-    height: 88px;
+    height: 86px;
     width: 568px;
     margin: 0 auto;
     position: relative;
@@ -329,7 +327,6 @@ input[type="radio"].visually-hidden {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 568px;
-    height: 395px;
     text-align: center;
     background-color: white;
     -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
@@ -719,7 +716,6 @@ a:active.current-page {
     background-image: url("../img/catalog_background_img.jpg");
     background-repeat: no-repeat;
     width: 1200px;
-    height: 217px;
 }
 .filter {
     -webkit-box-sizing: border-box;
@@ -954,6 +950,8 @@ a:active.current-page {
     color: #81b3d2;
 }
 .sort-links {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 0;
     padding: 0;
     width: 239px;
@@ -1041,8 +1039,8 @@ a:active.current-page {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 1200px;
-    height: 151px;
     padding: 26px 73px;
+    padding-bottom: 27px;
     border-bottom: 1px solid #e5e5e5;
     display: -webkit-box;
     display: -ms-flexbox;
